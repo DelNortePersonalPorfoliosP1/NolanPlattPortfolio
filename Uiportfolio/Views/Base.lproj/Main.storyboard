@@ -109,13 +109,16 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iD-QJ-pwW">
-                                <rect key="frame" x="140" y="553" width="137" height="34"/>
+                                <rect key="frame" x="136" y="551" width="137" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <state key="normal" title="Reverse String">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="kXf-ry-v6x" kind="show" id="B4T-Kb-iih"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -190,7 +193,9 @@
         <!--Reverse-->
         <scene sceneID="InO-o3-faS">
             <objects>
-                <viewControllerPlaceholder storyboardName="Reverse" id="kXf-ry-v6x" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Reverse" id="kXf-ry-v6x" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bJU-k4-aVa"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75l-Th-S4m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1604" y="417"/>
