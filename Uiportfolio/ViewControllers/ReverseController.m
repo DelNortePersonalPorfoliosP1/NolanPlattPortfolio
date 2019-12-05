@@ -9,15 +9,28 @@
 
 #import "ReverseController.h"
 #include "control.h"
+#include "string.h"
 
 @implementation ReverseController
-@synthesize reverse;
+@synthesize outputField;
+@synthesize inputField;
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [reverse setText:@"0.0"];
+}
+
+-(IBAction)reverseString:(id)sender {
+
+    const char *cInput = [inputField.text UTF8String];
+    long inputLength = inputField.text.length;
+
+    
+    outputField.text = [NSString stringWithFormat:@"%s", revXArray((char*)cInput, inputLength) ];
+
 
 }
 
+    
 @end
+

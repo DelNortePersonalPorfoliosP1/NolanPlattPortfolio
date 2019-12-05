@@ -31,8 +31,8 @@
 		6DB666152372033B00A89134 /* Pythagoras.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB666142372033B00A89134 /* Pythagoras.storyboard */; };
 		6DB6661F23724E2100A89134 /* calc.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DB6661E23724E2100A89134 /* calc.c */; };
 		9D8B26122396CF04007A1849 /* Reverse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8B26112396CF04007A1849 /* Reverse.storyboard */; };
-		9D8B26172396D04A007A1849 /* ReverseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8B26162396D04A007A1849 /* ReverseController.m */; };
-		9DA6BB8B2396D5C100EF5877 /* reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6BB8A2396D5C000EF5877 /* reverse.m */; };
+		9DA6BB8E239816BA00EF5877 /* reverse.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6BB8D239816BA00EF5877 /* reverse.c */; };
+		9DB0DDE7239818C6008C552E /* ReverseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB0DDE6239818C6008C552E /* ReverseController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,9 +71,9 @@
 		6DB666142372033B00A89134 /* Pythagoras.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pythagoras.storyboard; sourceTree = "<group>"; };
 		6DB6661E23724E2100A89134 /* calc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = calc.c; sourceTree = "<group>"; };
 		9D8B26112396CF04007A1849 /* Reverse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reverse.storyboard; sourceTree = "<group>"; };
-		9D8B26132396D016007A1849 /* ReverseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseController.h; sourceTree = "<group>"; };
-		9D8B26162396D04A007A1849 /* ReverseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseController.m; sourceTree = "<group>"; };
-		9DA6BB8A2396D5C000EF5877 /* reverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reverse.m; sourceTree = "<group>"; };
+		9DA6BB8D239816BA00EF5877 /* reverse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = reverse.c; sourceTree = "<group>"; };
+		9DB0DDE5239818BE008C552E /* ReverseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReverseController.h; path = Uiportfolio/ViewControllers/ReverseController.h; sourceTree = SOURCE_ROOT; };
+		9DB0DDE6239818C6008C552E /* ReverseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReverseController.m; path = Uiportfolio/ViewControllers/ReverseController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,6 @@
 		6D5429B223708A0A0059C604 /* Uiportfolio */ = {
 			isa = PBXGroup;
 			children = (
-				9DA6BB8A2396D5C000EF5877 /* reverse.m */,
 				6D5429C523708A0C0059C604 /* main.m */,
 				6D5429C423708A0C0059C604 /* Info.plist */,
 				6DB66605237135FB00A89134 /* Models */,
@@ -137,6 +136,8 @@
 		6DB66604237135ED00A89134 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9DB0DDE5239818BE008C552E /* ReverseController.h */,
+				9DB0DDE6239818C6008C552E /* ReverseController.m */,
 				6D7036D623799B80004A956C /* AlgoController.m */,
 				6D7036D823799BBF004A956C /* AlgoController.h */,
 				6D5429BA23708A0A0059C604 /* CalcController.m */,
@@ -149,8 +150,6 @@
 				6D7036D523799384004A956C /* JumpController.h */,
 				6D7036CA2377B9CA004A956C /* PythController.h */,
 				6D7036C82377B995004A956C /* PythController.m */,
-				9D8B26162396D04A007A1849 /* ReverseController.m */,
-				9D8B26132396D016007A1849 /* ReverseController.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -175,6 +174,7 @@
 				6D7036E02379DA94004A956C /* histogram.c */,
 				6D7036DE2379DA59004A956C /* jumpers.c */,
 				6D7036DB2379DA41004A956C /* programming.c */,
+				9DA6BB8D239816BA00EF5877 /* reverse.c */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -256,7 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DA6BB8B2396D5C100EF5877 /* reverse.m in Sources */,
 				6D7036DF2379DA59004A956C /* jumpers.c in Sources */,
 				6D7036D123788FAB004A956C /* FileIOController.m in Sources */,
 				6DB6661F23724E2100A89134 /* calc.c in Sources */,
@@ -270,7 +269,8 @@
 				6D7036D723799B80004A956C /* AlgoController.m in Sources */,
 				6D7036D423799330004A956C /* JumpController.m in Sources */,
 				6D7036DA2379DA31004A956C /* fileparse.c in Sources */,
-				9D8B26172396D04A007A1849 /* ReverseController.m in Sources */,
+				9DA6BB8E239816BA00EF5877 /* reverse.c in Sources */,
+				9DB0DDE7239818C6008C552E /* ReverseController.m in Sources */,
 				6D7036DC2379DA41004A956C /* programming.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
