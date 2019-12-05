@@ -72,8 +72,8 @@
 		6DB6661E23724E2100A89134 /* calc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = calc.c; sourceTree = "<group>"; };
 		9D8B26112396CF04007A1849 /* Reverse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reverse.storyboard; sourceTree = "<group>"; };
 		9DA6BB8D239816BA00EF5877 /* reverse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = reverse.c; sourceTree = "<group>"; };
-		9DB0DDE5239818BE008C552E /* ReverseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReverseController.h; path = Uiportfolio/ViewControllers/ReverseController.h; sourceTree = SOURCE_ROOT; };
 		9DB0DDE6239818C6008C552E /* ReverseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReverseController.m; path = Uiportfolio/ViewControllers/ReverseController.m; sourceTree = SOURCE_ROOT; };
+		C064E18423996644003A5991 /* ReverseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +136,8 @@
 		6DB66604237135ED00A89134 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9DB0DDE5239818BE008C552E /* ReverseController.h */,
 				9DB0DDE6239818C6008C552E /* ReverseController.m */,
+				C064E18423996644003A5991 /* ReverseController.h */,
 				6D7036D623799B80004A956C /* AlgoController.m */,
 				6D7036D823799BBF004A956C /* AlgoController.h */,
 				6D5429BA23708A0A0059C604 /* CalcController.m */,
@@ -173,8 +173,8 @@
 				6D7036D92379DA31004A956C /* fileparse.c */,
 				6D7036E02379DA94004A956C /* histogram.c */,
 				6D7036DE2379DA59004A956C /* jumpers.c */,
-				6D7036DB2379DA41004A956C /* programming.c */,
 				9DA6BB8D239816BA00EF5877 /* reverse.c */,
+				6D7036DB2379DA41004A956C /* programming.c */,
 			);
 			path = Control;
 			sourceTree = "<group>";

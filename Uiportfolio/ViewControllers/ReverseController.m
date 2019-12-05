@@ -28,6 +28,8 @@
     
     outputField.text = [NSString stringWithFormat:@"%s", revXArray((char*)cInput, inputLength) ];
 
+   // outputField.text = [NSString stringWithFormat:@"%s", revXRecurse((char*)cInput, inputLength) ];
+    
 
 }
 
