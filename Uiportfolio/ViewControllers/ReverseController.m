@@ -12,7 +12,11 @@
 #include "string.h"
 
 @implementation ReverseController
-@synthesize outputField;
+@synthesize arrayField;
+@synthesize pointerField;
+@synthesize recurseField;
+
+
 @synthesize inputField;
 
 
@@ -25,8 +29,9 @@
     const char *cInput = [inputField.text UTF8String];
     long inputLength = inputField.text.length;
 
-    
-    outputField.text = [NSString stringWithFormat:@"%s", revXArray((char*)cInput, inputLength) ];
+    //printf("Length: %ld\n", inputLength);
+
+    arrayField.text = [NSString stringWithFormat:@"%s", revXArray((char*)cInput, inputLength) ];
 
    // outputField.text = [NSString stringWithFormat:@"%s", revXRecurse((char*)cInput, inputLength) ];
     

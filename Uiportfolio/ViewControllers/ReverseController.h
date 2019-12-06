@@ -10,8 +10,11 @@
 
 @interface ReverseController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UITextField *outputField;
 @property (strong, nonatomic) IBOutlet UITextField *inputField;
+@property (strong, nonatomic) IBOutlet UITextField *arrayField;
+@property (strong, nonatomic) IBOutlet UITextField *recurseField;
+@property (strong, nonatomic) IBOutlet UITextField *pointerField;
+
 char *revXArray(char* input, long length);
 char *revXRecurse(char* input, long length);
 char *revXPointer(char* input, long length);
