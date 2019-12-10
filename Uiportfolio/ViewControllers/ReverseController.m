@@ -31,9 +31,18 @@
 
     //printf("Length: %ld\n", inputLength);
 
+    
+    // Array Method
     arrayField.text = [NSString stringWithFormat:@"%s", revXArray((char*)cInput, inputLength) ];
+    
+    // Recurse Method
+    recurseField.text = [NSString stringWithFormat:@"%s", revXRecurse((char*)cInput, inputLength) ];
+    
+    // Pointer Method
+    pointerField.text = [NSString stringWithFormat:@"%s", revXPointer((char*)cInput, inputLength) ];
 
-   // outputField.text = [NSString stringWithFormat:@"%s", revXRecurse((char*)cInput, inputLength) ];
+    
+
     
 
 }
