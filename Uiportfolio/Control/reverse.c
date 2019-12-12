@@ -12,6 +12,9 @@
 
 char revBuffer[LINE_BUFFER_SIZE];
 
+char *isPali = "Pali";
+char *noPali = "Not Pali";
+
 
 char *revXArray(char* input, long length) {
     
@@ -72,6 +75,16 @@ char *revXPointer(const char* input, long length) {
   }
   revBuffer[length] = 0;
   return revBuffer;
+}
+
+char *paliEval(const char* input, const char* output) {
+    
+   if (strcmp (input, output) == 0) {
+       return isPali;
+   }
+    else {
+        return noPali;
+    }
 }
 
 

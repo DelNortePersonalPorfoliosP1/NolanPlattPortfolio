@@ -33,6 +33,9 @@
 		9D8B26122396CF04007A1849 /* Reverse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8B26112396CF04007A1849 /* Reverse.storyboard */; };
 		9DA6BB8E239816BA00EF5877 /* reverse.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6BB8D239816BA00EF5877 /* reverse.c */; };
 		9DB0DDE7239818C6008C552E /* ReverseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB0DDE6239818C6008C552E /* ReverseController.m */; };
+		C007135823A1506B00CB2E90 /* phrasetowords.c in Sources */ = {isa = PBXBuildFile; fileRef = C007135723A1506B00CB2E90 /* phrasetowords.c */; };
+		C007135A23A1508700CB2E90 /* PhraseToWordsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C007135923A1508700CB2E90 /* PhraseToWordsController.m */; };
+		C0A422D523A14EBE003B8024 /* PhraseToWords.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A422D423A14EBE003B8024 /* PhraseToWords.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,7 +76,11 @@
 		9D8B26112396CF04007A1849 /* Reverse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reverse.storyboard; sourceTree = "<group>"; };
 		9DA6BB8D239816BA00EF5877 /* reverse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = reverse.c; sourceTree = "<group>"; };
 		9DB0DDE6239818C6008C552E /* ReverseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReverseController.m; path = Uiportfolio/ViewControllers/ReverseController.m; sourceTree = SOURCE_ROOT; };
+		C007135723A1506B00CB2E90 /* phrasetowords.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = phrasetowords.c; sourceTree = "<group>"; };
+		C007135923A1508700CB2E90 /* PhraseToWordsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhraseToWordsController.m; sourceTree = "<group>"; };
+		C007135B23A1509900CB2E90 /* PhraseToWordsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhraseToWordsController.h; sourceTree = "<group>"; };
 		C064E18423996644003A5991 /* ReverseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseController.h; sourceTree = "<group>"; };
+		C0A422D423A14EBE003B8024 /* PhraseToWords.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhraseToWords.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +136,7 @@
 				6D5429BF23708A0C0059C604 /* Assets.xcassets */,
 				6DB666142372033B00A89134 /* Pythagoras.storyboard */,
 				9D8B26112396CF04007A1849 /* Reverse.storyboard */,
+				C0A422D423A14EBE003B8024 /* PhraseToWords.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -150,6 +158,8 @@
 				6D7036D523799384004A956C /* JumpController.h */,
 				6D7036CA2377B9CA004A956C /* PythController.h */,
 				6D7036C82377B995004A956C /* PythController.m */,
+				C007135923A1508700CB2E90 /* PhraseToWordsController.m */,
+				C007135B23A1509900CB2E90 /* PhraseToWordsController.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -175,6 +185,7 @@
 				6D7036DE2379DA59004A956C /* jumpers.c */,
 				9DA6BB8D239816BA00EF5877 /* reverse.c */,
 				6D7036DB2379DA41004A956C /* programming.c */,
+				C007135723A1506B00CB2E90 /* phrasetowords.c */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -239,6 +250,7 @@
 				6DB666092371ED4400A89134 /* FileIO.storyboard in Resources */,
 				6D5429C323708A0C0059C604 /* LaunchScreen.storyboard in Resources */,
 				6DB666112372014200A89134 /* Jumpers.storyboard in Resources */,
+				C0A422D523A14EBE003B8024 /* PhraseToWords.storyboard in Resources */,
 				6D2C88E823824EE6008A5F5E /* HistoLab.storyboard in Resources */,
 				6D5429C023708A0C0059C604 /* Assets.xcassets in Resources */,
 				6DB666072371E7D600A89134 /* Calculator.storyboard in Resources */,
@@ -263,12 +275,14 @@
 				6D7036C92377B995004A956C /* PythController.m in Sources */,
 				6D5429B523708A0A0059C604 /* AppDelegate.m in Sources */,
 				6D7036E12379DA95004A956C /* histogram.c in Sources */,
+				C007135A23A1508700CB2E90 /* PhraseToWordsController.m in Sources */,
 				6D2C88E623824E78008A5F5E /* HistoController.m in Sources */,
 				6D5429C623708A0C0059C604 /* main.m in Sources */,
 				6D5429B823708A0A0059C604 /* SceneDelegate.m in Sources */,
 				6D7036D723799B80004A956C /* AlgoController.m in Sources */,
 				6D7036D423799330004A956C /* JumpController.m in Sources */,
 				6D7036DA2379DA31004A956C /* fileparse.c in Sources */,
+				C007135823A1506B00CB2E90 /* phrasetowords.c in Sources */,
 				9DA6BB8E239816BA00EF5877 /* reverse.c in Sources */,
 				9DB0DDE7239818C6008C552E /* ReverseController.m in Sources */,
 				6D7036DC2379DA41004A956C /* programming.c in Sources */,
