@@ -19,10 +19,7 @@
 @synthesize paliField;
 
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
+ 
 -(IBAction)reverseString:(id)sender {
 
     const char *cInput = [inputField.text UTF8String];

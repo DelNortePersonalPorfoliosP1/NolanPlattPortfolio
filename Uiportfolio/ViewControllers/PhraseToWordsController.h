@@ -10,6 +10,10 @@
 
 @interface PhraseToWordsController : UIViewController
 
+char *revXArray(char* input, long length);
+char *revXRecurse(char* input, long length);
+char *revXPointer(char* input, long length);
+char *paliEval(char* input, char* output);
 
 @end
  

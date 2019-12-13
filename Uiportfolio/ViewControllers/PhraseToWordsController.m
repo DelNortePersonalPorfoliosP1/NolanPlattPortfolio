@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
+
+-(IBAction)reversePhrase:(id)sender {
+    
+}
+
 @end
 
                                      
