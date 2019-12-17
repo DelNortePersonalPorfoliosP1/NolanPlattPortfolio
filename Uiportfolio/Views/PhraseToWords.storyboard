@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Phrase To Words-->
+        <!--Phrase To Words Controller-->
         <scene sceneID="YlU-AV-Tpe">
             <objects>
-                <viewController id="AaM-XT-iFf" customClass="PhraseToWords" sceneMemberID="viewController">
+                <viewController id="AaM-XT-iFf" customClass="PhraseToWordsController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ubc-9M-Rii">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tsn-po-QEi">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Input" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tsn-po-QEi">
                                 <rect key="frame" x="159" y="269" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -50,6 +50,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="yy2-XV-MGT"/>
                     </view>
+                    <connections>
+                        <outlet property="inputField" destination="tsn-po-QEi" id="7it-fT-fOj"/>
+                        <outlet property="outputField" destination="J2z-ig-XCe" id="9gH-wU-kFG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6D-xL-Kq1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

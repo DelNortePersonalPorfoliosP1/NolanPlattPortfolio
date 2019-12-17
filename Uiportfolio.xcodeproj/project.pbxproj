@@ -36,6 +36,7 @@
 		C007135823A1506B00CB2E90 /* phrasetowords.c in Sources */ = {isa = PBXBuildFile; fileRef = C007135723A1506B00CB2E90 /* phrasetowords.c */; };
 		C007135A23A1508700CB2E90 /* PhraseToWordsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C007135923A1508700CB2E90 /* PhraseToWordsController.m */; };
 		C0A422D523A14EBE003B8024 /* PhraseToWords.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A422D423A14EBE003B8024 /* PhraseToWords.storyboard */; };
+		C0ED40C023A9488C005B950C /* piglatin.c in Sources */ = {isa = PBXBuildFile; fileRef = C0ED40BF23A9488C005B950C /* piglatin.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		C007135B23A1509900CB2E90 /* PhraseToWordsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhraseToWordsController.h; sourceTree = "<group>"; };
 		C064E18423996644003A5991 /* ReverseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseController.h; sourceTree = "<group>"; };
 		C0A422D423A14EBE003B8024 /* PhraseToWords.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhraseToWords.storyboard; sourceTree = "<group>"; };
+		C0ED40BF23A9488C005B950C /* piglatin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = piglatin.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +115,6 @@
 		6D5429B223708A0A0059C604 /* Uiportfolio */ = {
 			isa = PBXGroup;
 			children = (
-				6D5429C523708A0C0059C604 /* main.m */,
 				6D5429C423708A0C0059C604 /* Info.plist */,
 				6DB66605237135FB00A89134 /* Models */,
 				6DB66603237135DD00A89134 /* Views */,
@@ -133,6 +134,7 @@
 				6DB666082371ED4400A89134 /* FileIO.storyboard */,
 				6DB666102372014200A89134 /* Jumpers.storyboard */,
 				6D2C88E723824EE6008A5F5E /* HistoLab.storyboard */,
+				6D5429C523708A0C0059C604 /* main.m */,
 				6D5429BF23708A0C0059C604 /* Assets.xcassets */,
 				6DB666142372033B00A89134 /* Pythagoras.storyboard */,
 				9D8B26112396CF04007A1849 /* Reverse.storyboard */,
@@ -186,6 +188,7 @@
 				9DA6BB8D239816BA00EF5877 /* reverse.c */,
 				6D7036DB2379DA41004A956C /* programming.c */,
 				C007135723A1506B00CB2E90 /* phrasetowords.c */,
+				C0ED40BF23A9488C005B950C /* piglatin.c */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0ED40C023A9488C005B950C /* piglatin.c in Sources */,
 				6D7036DF2379DA59004A956C /* jumpers.c in Sources */,
 				6D7036D123788FAB004A956C /* FileIOController.m in Sources */,
 				6DB6661F23724E2100A89134 /* calc.c in Sources */,
