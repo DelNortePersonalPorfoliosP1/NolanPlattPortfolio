@@ -21,15 +21,8 @@
     [super viewDidLoad];
 }
 -(IBAction)reversePhrase:(id)sender {
-    const char *cInput = [inputField.text UTF8String];
-      long inputLength = inputField.text.length;
-
-      //printf("Length: %ld\n", inputLength);
-
-      char* output = revXArray((char*)cInput, inputLength);
-
     
-    outputField.text = [NSString stringWithFormat:@"%s", revXArray((char*)cInput, inputLength) ];
+    tokentest();
 }
 
 @end

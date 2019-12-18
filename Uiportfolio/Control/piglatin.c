@@ -7,23 +7,35 @@
 //
 
 #include <stdio.h>
-#include "string.h"
-typedef struct language {
-    char word[80];
-    char reversed[80];
-    char pigged[80];
-    char shorted[80];
-} WORDS;
-typedef struct phrases {
-    char phrases[1000];
-    WORDS wordList[1000];
-} PHRASE;
+#include <string.h>
+#include "control.h"
+
+void tokentest(void);
 
 
-char pig(char sentence) {
-    
-    
-    char test = "hi";
-    return test;
-    
+
+void tokentest() {
+    printf("being called");
+  PHRASE in;               // Phrase is defined in control.h
+  char str[LINE_BUFFER_SIZE] = "A Man A Plan A Canal – Panama";
+  const char *tokenizer = " ";
+   
+  strcpy(in.original, str);
+  printf( "original phrase: %s\n", in.original );
+  long i = 0;
+  char *token = strtok(str, tokenizer);  // 1st word
+  while( token != NULL ) {        // NULL mean end of phrase
+    printf( "word after tokenizing: %s\n", token );
+     
+    // assignment to struct
+    strcpy(in.words[i].word, token);
+    printf( "word in structure %li: %s\n", i, in.words[i].word);
+     
+    // iterate
+    i++;
+    token = strtok(NULL, tokenizer);  // remaining words, NULL means same str
+  }
+    return;
 }
+
+

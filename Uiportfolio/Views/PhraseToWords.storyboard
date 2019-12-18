@@ -32,6 +32,9 @@
                                 <rect key="frame" x="163" y="335" width="63" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Translate"/>
+                                <connections>
+                                    <action selector="reversePhrase:" destination="AaM-XT-iFf" eventType="touchUpInside" id="tSM-yh-fpi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Output" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQW-Tf-U9w">
                                 <rect key="frame" x="163" y="455" width="54" height="21"/>

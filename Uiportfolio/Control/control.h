@@ -13,6 +13,7 @@
 #define BUFFER_SIZE 80
 #define FILE_BUFFER_SIZE 1024
 #define LINE_BUFFER_SIZE 256
+#define WORDS_TO_LINE_SIZE 64
 // Math operations
 #define PLUS 0
 #define MINUS 1
@@ -58,4 +59,19 @@ double calculateIt(double arg1, int mathOp, double arg2);
 double hyptoneuse (double side1, double side2);
 int largest(int arr[], int n); //Temporary prototype definition
 
+// Definition of structure
+// Tokenizing Helper Structure
+typedef struct words {
+  char word[BUFFER_SIZE];
+  char reversed[BUFFER_SIZE];
+  char pigged[BUFFER_SIZE];
+  char shorted[BUFFER_SIZE];
+} WORDS;
+typedef struct phrases {
+  char original[LINE_BUFFER_SIZE];
+  char piglatin[LINE_BUFFER_SIZE];
+  char shorthand[LINE_BUFFER_SIZE];
+  char reversed[LINE_BUFFER_SIZE];
+  WORDS words[WORDS_TO_LINE_SIZE];
+} PHRASE;
 #endif /* portfolio_h */
