@@ -21,8 +21,8 @@
     [super viewDidLoad];
 }
 -(IBAction)reversePhrase:(id)sender {
-    
-    tokentest();
+    char *stringIn = "A Man A Plan A Canal – Panama";
+    tokentest(*stringIn);
 }
 
 @end

@@ -10,20 +10,19 @@
 #include <string.h>
 #include "control.h"
 
-void tokentest(void);
+void tokentest(char str);
 
 
 
-void tokentest() {
+void tokentest(char str) {
     printf("being called");
   PHRASE in;               // Phrase is defined in control.h
-  char str[LINE_BUFFER_SIZE] = "A Man A Plan A Canal – Panama";
   const char *tokenizer = " ";
    
-  strcpy(in.original, str);
+    strcpy(in.original, &str);
   printf( "original phrase: %s\n", in.original );
   long i = 0;
-  char *token = strtok(str, tokenizer);  // 1st word
+    char *token = strtok(&str, tokenizer);  // 1st word
   while( token != NULL ) {        // NULL mean end of phrase
     printf( "word after tokenizing: %s\n", token );
      
