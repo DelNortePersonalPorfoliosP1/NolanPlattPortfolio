@@ -17,7 +17,7 @@ char *revXArray(char* input, long length);
 char *revXRecurse(char* input, long length);
 char *revXPointer(char* input, long length);
 char *paliEval(char* input, char* output);
-void tokentest(char str);
+char tokentest(char str);
 
 
 @end
