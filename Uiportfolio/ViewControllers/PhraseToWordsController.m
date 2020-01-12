@@ -8,7 +8,8 @@
 
 #import "PhraseToWordsController.h"
 
-#include "string.h"
+#include <string.h>
+#include "control.h"
 
 @implementation PhraseToWordsController
 
@@ -21,8 +22,7 @@
 }
 -(IBAction)reversePhrase:(id)sender {
     char *stringIn = "A Man A Plan A Canal – Panama";
-    char *output = tokentest(*stringIn);
-    printf("%s", output);
+    printf("%s", tokentester(stringIn));
 }  
 
 @end

@@ -10,20 +10,17 @@
 #include <string.h>
 #include "control.h"
 
-char tokentest(char str);
+PHRASE in;
 
-
-
-char tokentest(char str) {
+char * tokentester(char * str) {
     printf("Function is being called");
-  PHRASE in;
   const char *tokenizer = " ";
    
-    strcpy(in.original, &str);
+    strcpy(in.original, str);
   printf( "original phrase: %s\n", in.original );
   long i = 0;
     
-    char *token = strtok(NULL, tokenizer);    // remaining words, NULL means same str
+    char *token = strtok(in.original, tokenizer);    // remaining words, NULL means same str
 
   while( token != NULL ) {
     printf( "word after tokenizing: %s\n", token );
@@ -35,7 +32,7 @@ char tokentest(char str) {
     i++;
     token = strtok(NULL, tokenizer);
   }
-    return token;
+    return in.original;
 }
 
 
