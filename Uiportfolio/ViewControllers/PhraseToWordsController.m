@@ -20,10 +20,12 @@
     [super viewDidLoad];
 }
 -(IBAction)reversePhrase:(id)sender {
-    char *stringIn = "A Man A Plan A Canal – Panama";
-    char *output = tokentest(*stringIn);
-    printf("%s", output);
-}  
+   // char *stringIn = "A Man A Plan A Canal – Panama";
+  //  char *output =
+   // tokentest(*stringIn);
+  //  tokentest();
+    //printf("%s", output);
+}
 
 @end
 
