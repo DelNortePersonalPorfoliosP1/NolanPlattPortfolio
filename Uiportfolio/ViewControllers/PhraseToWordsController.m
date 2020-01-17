@@ -8,7 +8,8 @@
 
 #import "PhraseToWordsController.h"
 
-#include "string.h"
+#include <string.h>
+#include "control.h"
 
 @implementation PhraseToWordsController
 
@@ -20,12 +21,9 @@
     [super viewDidLoad];
 }
 -(IBAction)reversePhrase:(id)sender {
-   // char *stringIn = "A Man A Plan A Canal – Panama";
-  //  char *output =
-   // tokentest(*stringIn);
-  //  tokentest();
-    //printf("%s", output);
-}
+    
+   outputField.text = [NSString stringWithFormat:@"%s" , reversePhrase(inputField.text.UTF8String)];
+}  
 
 @end
 

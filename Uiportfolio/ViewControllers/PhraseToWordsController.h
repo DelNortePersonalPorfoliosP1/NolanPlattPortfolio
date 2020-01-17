@@ -17,6 +17,12 @@ char *revXArray(char* input, long length);
 char *revXRecurse(char* input, long length);
 char *revXPointer(char* input, long length);
 char *paliEval(char* input, char* output);
+
+
+char *reverseString(char *word);
+char *reversePhrase(const char * str);
+char *shortHand(const char * str);
+
 //char tokentest(char str);
 void tokentest(void);
 

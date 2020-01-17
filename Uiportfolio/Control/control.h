@@ -58,8 +58,14 @@ int zeroTest(double value);
 double calculateIt(double arg1, int mathOp, double arg2);
 double hyptoneuse (double side1, double side2);
 int largest(int arr[], int n); //Temporary prototype definition
+char * tokentester(char * str) ;
 
-// Definition of structure
-// Tokenizing Helper Structure
+
+char *reversePhrase(const char * str);
+char *reverseString(char *word);
+char *shortHand(const char * str);
+
+
+
 
 #endif /* portfolio_h */

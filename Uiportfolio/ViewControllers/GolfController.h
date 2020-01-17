@@ -15,4 +15,14 @@
 @property (weak, nonatomic) IBOutlet UIImageView *Hole;
 @property (weak, nonatomic) IBOutlet UIImageView *Ball;
 
+@property (nonatomic) CGPoint firstPoint;
+@property (nonatomic) CGPoint lastPoint;
+@property (nonatomic) float ballVelocityX;
+@property (nonatomic) float ballVelocityY;
+@property (strong, nonatomic) NSTimer *gameTimer;
+
+#define speedScale 0.20
+#define speedDamping 0.90  // friction rate
+#define stopSpeed 5.0
+
 @end
