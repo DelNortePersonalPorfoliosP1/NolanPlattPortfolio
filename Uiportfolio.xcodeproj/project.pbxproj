@@ -33,7 +33,6 @@
 		9D8B26122396CF04007A1849 /* Reverse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8B26112396CF04007A1849 /* Reverse.storyboard */; };
 		9DA6BB8E239816BA00EF5877 /* reverse.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6BB8D239816BA00EF5877 /* reverse.c */; };
 		9DB0DDE7239818C6008C552E /* ReverseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB0DDE6239818C6008C552E /* ReverseController.m */; };
-		C007135823A1506B00CB2E90 /* phrasetowords.c in Sources */ = {isa = PBXBuildFile; fileRef = C007135723A1506B00CB2E90 /* phrasetowords.c */; };
 		C007135A23A1508700CB2E90 /* PhraseToWordsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C007135923A1508700CB2E90 /* PhraseToWordsController.m */; };
 		C00B21AF23D7674300D1B723 /* golfball.png in Resources */ = {isa = PBXBuildFile; fileRef = C00B21AE23D7674300D1B723 /* golfball.png */; };
 		C00B21B123D76B0500D1B723 /* Black-square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C00B21B023D76B0500D1B723 /* Black-square.jpg */; };
@@ -81,7 +80,6 @@
 		9D8B26112396CF04007A1849 /* Reverse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reverse.storyboard; sourceTree = "<group>"; };
 		9DA6BB8D239816BA00EF5877 /* reverse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = reverse.c; sourceTree = "<group>"; };
 		9DB0DDE6239818C6008C552E /* ReverseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReverseController.m; path = Uiportfolio/ViewControllers/ReverseController.m; sourceTree = SOURCE_ROOT; };
-		C007135723A1506B00CB2E90 /* phrasetowords.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = phrasetowords.c; sourceTree = "<group>"; };
 		C007135923A1508700CB2E90 /* PhraseToWordsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhraseToWordsController.m; sourceTree = "<group>"; };
 		C007135B23A1509900CB2E90 /* PhraseToWordsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhraseToWordsController.h; sourceTree = "<group>"; };
 		C00B21AE23D7674300D1B723 /* golfball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golfball.png; sourceTree = "<group>"; };
@@ -201,7 +199,6 @@
 				6D7036DE2379DA59004A956C /* jumpers.c */,
 				9DA6BB8D239816BA00EF5877 /* reverse.c */,
 				6D7036DB2379DA41004A956C /* programming.c */,
-				C007135723A1506B00CB2E90 /* phrasetowords.c */,
 				C0ED40BF23A9488C005B950C /* piglatin.c */,
 			);
 			path = Control;
@@ -304,7 +301,6 @@
 				6D7036D723799B80004A956C /* AlgoController.m in Sources */,
 				6D7036D423799330004A956C /* JumpController.m in Sources */,
 				6D7036DA2379DA31004A956C /* fileparse.c in Sources */,
-				C007135823A1506B00CB2E90 /* phrasetowords.c in Sources */,
 				9DA6BB8E239816BA00EF5877 /* reverse.c in Sources */,
 				9DB0DDE7239818C6008C552E /* ReverseController.m in Sources */,
 				6D7036DC2379DA41004A956C /* programming.c in Sources */,
