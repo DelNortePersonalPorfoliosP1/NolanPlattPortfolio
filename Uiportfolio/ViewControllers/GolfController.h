@@ -14,6 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *Hole;
 @property (weak, nonatomic) IBOutlet UIImageView *Ball;
+@property (weak, nonatomic) IBOutlet UIImageView *Wall;
 
 @property (nonatomic) CGPoint firstPoint;
 @property (nonatomic) CGPoint lastPoint;

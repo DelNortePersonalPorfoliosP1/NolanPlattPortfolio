@@ -14,7 +14,7 @@
 
 @synthesize Ball;
 @synthesize Hole;
-
+@synthesize Wall;
 
 - (void)viewDidLoad {
 [super viewDidLoad];
@@ -42,6 +42,20 @@
     [self.gameTimer invalidate];
     [self.view setUserInteractionEnabled:YES];
   }
+    
+    //check if ball intersects / touches wall
+    
+    
+    if (CGRectIntersectsRect(self.Ball.frame, self.Wall.frame)) {
+       //[self.gameTimer invalidate];
+        //[self.view setUserInteractionEnabled:YES];
+        
+        
+        _ballVelocityX = -_ballVelocityX;
+        _ballVelocityY = -_ballVelocityY;
+        
+       
+     }
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
