@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blacksquare.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GoV-BQ-sdZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Black-square.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GoV-BQ-sdZ">
                                 <rect key="frame" x="155" y="106" width="90" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -39,7 +39,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="blacksquare.jpg" width="223" height="226"/>
+        <image name="Black-square.jpg" width="802" height="802"/>
         <image name="golfball.png" width="114" height="114"/>
     </resources>
 </document>
