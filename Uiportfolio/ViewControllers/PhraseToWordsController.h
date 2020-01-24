@@ -11,7 +11,9 @@
 @interface PhraseToWordsController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UITextField *inputField;
-@property (strong, nonatomic) IBOutlet UITextField *outputField;
+
+@property (weak, nonatomic) IBOutlet UITextField *reverseOutput;
+@property (weak, nonatomic) IBOutlet UITextField *shortHandOutput;
 
 char *revXArray(char* input, long length);
 char *revXRecurse(char* input, long length);
@@ -20,9 +22,9 @@ char *paliEval(char* input, char* output);
 
 
 char *reverseString(char *word);
-char *reversePhrase(const char * str);
-char *shortHand(const char * str);
-
+char *reversePhrase(const char * phrase);
+char *shortHandPhrase(const char * phrase);
+char *shortHandString(char *word);
 //char tokentest(char str);
 void tokentest(void);
 

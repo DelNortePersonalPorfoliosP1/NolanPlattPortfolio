@@ -57,13 +57,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Output" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SDM-mV-TaU">
+                                <rect key="frame" x="196" y="545" width="198" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="yy2-XV-MGT"/>
                     </view>
                     <connections>
                         <outlet property="inputField" destination="tsn-po-QEi" id="7it-fT-fOj"/>
-                        <outlet property="outputField" destination="J2z-ig-XCe" id="9gH-wU-kFG"/>
+                        <outlet property="reverseOutput" destination="J2z-ig-XCe" id="ig1-V2-6tn"/>
+                        <outlet property="shortHandOutput" destination="SDM-mV-TaU" id="6Zi-AJ-trs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6D-xL-Kq1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

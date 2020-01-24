@@ -61,10 +61,10 @@ int largest(int arr[], int n); //Temporary prototype definition
 char * tokentester(char * str) ;
 
 
-char *reversePhrase(const char * str);
+char *reversePhrase(const char * phrase);
 char *reverseString(char *word);
-char *shortHand(const char * str);
-
+char *shortHandPhrase(const char * phrase);
+char *shortHandString(char *word);
 
 
 

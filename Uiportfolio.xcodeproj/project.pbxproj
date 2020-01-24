@@ -36,10 +36,12 @@
 		C007135A23A1508700CB2E90 /* PhraseToWordsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C007135923A1508700CB2E90 /* PhraseToWordsController.m */; };
 		C00B21AF23D7674300D1B723 /* golfball.png in Resources */ = {isa = PBXBuildFile; fileRef = C00B21AE23D7674300D1B723 /* golfball.png */; };
 		C00B21B123D76B0500D1B723 /* Black-square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C00B21B023D76B0500D1B723 /* Black-square.jpg */; };
+		C019B59023DB533200854AF6 /* GolfLevel2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C019B58F23DB533200854AF6 /* GolfLevel2.storyboard */; };
 		C0A422D523A14EBE003B8024 /* PhraseToWords.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A422D423A14EBE003B8024 /* PhraseToWords.storyboard */; };
 		C0D83AFF23CF72AA00A4C866 /* Golf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0D83AFE23CF72AA00A4C866 /* Golf.storyboard */; };
 		C0D83B0323CF745800A4C866 /* GolfController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D83B0223CF745800A4C866 /* GolfController.m */; };
 		C0ED40C023A9488C005B950C /* piglatin.c in Sources */ = {isa = PBXBuildFile; fileRef = C0ED40BF23A9488C005B950C /* piglatin.c */; };
+		C0ED77E423DB558200F7EE7A /* GolfLevel2.m in Sources */ = {isa = PBXBuildFile; fileRef = C0ED77E323DB558200F7EE7A /* GolfLevel2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,12 +86,15 @@
 		C007135B23A1509900CB2E90 /* PhraseToWordsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhraseToWordsController.h; sourceTree = "<group>"; };
 		C00B21AE23D7674300D1B723 /* golfball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golfball.png; sourceTree = "<group>"; };
 		C00B21B023D76B0500D1B723 /* Black-square.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Black-square.jpg"; sourceTree = "<group>"; };
+		C019B58F23DB533200854AF6 /* GolfLevel2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GolfLevel2.storyboard; sourceTree = "<group>"; };
 		C064E18423996644003A5991 /* ReverseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseController.h; sourceTree = "<group>"; };
 		C0A422D423A14EBE003B8024 /* PhraseToWords.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhraseToWords.storyboard; sourceTree = "<group>"; };
 		C0D83AFE23CF72AA00A4C866 /* Golf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Golf.storyboard; sourceTree = "<group>"; };
 		C0D83B0223CF745800A4C866 /* GolfController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GolfController.m; sourceTree = "<group>"; };
 		C0D83B0423CF746500A4C866 /* GolfController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GolfController.h; sourceTree = "<group>"; };
 		C0ED40BF23A9488C005B950C /* piglatin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = piglatin.c; sourceTree = "<group>"; };
+		C0ED77E323DB558200F7EE7A /* GolfLevel2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GolfLevel2.m; sourceTree = "<group>"; };
+		C0ED77E523DB558F00F7EE7A /* GolfLevel2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GolfLevel2.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,9 +141,9 @@
 		6DB66603237135DD00A89134 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C019B58C23DB52EA00854AF6 /* Golf */,
 				6D5429C123708A0C0059C604 /* LaunchScreen.storyboard */,
 				6D5429BC23708A0A0059C604 /* Main.storyboard */,
-				C0D83AFE23CF72AA00A4C866 /* Golf.storyboard */,
 				6DB666122372021400A89134 /* AlgoSearch.storyboard */,
 				6DB666062371E7D600A89134 /* Calculator.storyboard */,
 				6DB666082371ED4400A89134 /* FileIO.storyboard */,
@@ -156,6 +161,7 @@
 		6DB66604237135ED00A89134 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C019B58E23DB530E00854AF6 /* GolfControllers */,
 				9DB0DDE6239818C6008C552E /* ReverseController.m */,
 				C064E18423996644003A5991 /* ReverseController.h */,
 				6D7036D623799B80004A956C /* AlgoController.m */,
@@ -172,8 +178,6 @@
 				6D7036C82377B995004A956C /* PythController.m */,
 				C007135923A1508700CB2E90 /* PhraseToWordsController.m */,
 				C007135B23A1509900CB2E90 /* PhraseToWordsController.h */,
-				C0D83B0223CF745800A4C866 /* GolfController.m */,
-				C0D83B0423CF746500A4C866 /* GolfController.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -202,6 +206,26 @@
 				C0ED40BF23A9488C005B950C /* piglatin.c */,
 			);
 			path = Control;
+			sourceTree = "<group>";
+		};
+		C019B58C23DB52EA00854AF6 /* Golf */ = {
+			isa = PBXGroup;
+			children = (
+				C0D83AFE23CF72AA00A4C866 /* Golf.storyboard */,
+				C019B58F23DB533200854AF6 /* GolfLevel2.storyboard */,
+			);
+			path = Golf;
+			sourceTree = "<group>";
+		};
+		C019B58E23DB530E00854AF6 /* GolfControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0D83B0223CF745800A4C866 /* GolfController.m */,
+				C0D83B0423CF746500A4C866 /* GolfController.h */,
+				C0ED77E323DB558200F7EE7A /* GolfLevel2.m */,
+				C0ED77E523DB558F00F7EE7A /* GolfLevel2.h */,
+			);
+			path = GolfControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +294,7 @@
 				6DB666072371E7D600A89134 /* Calculator.storyboard in Resources */,
 				6DB666132372021400A89134 /* AlgoSearch.storyboard in Resources */,
 				6DB666152372033B00A89134 /* Pythagoras.storyboard in Resources */,
+				C019B59023DB533200854AF6 /* GolfLevel2.storyboard in Resources */,
 				C00B21AF23D7674300D1B723 /* golfball.png in Resources */,
 				6D5429BE23708A0A0059C604 /* Main.storyboard in Resources */,
 				C0D83AFF23CF72AA00A4C866 /* Golf.storyboard in Resources */,
@@ -290,6 +315,7 @@
 				6D7036D123788FAB004A956C /* FileIOController.m in Sources */,
 				6DB6661F23724E2100A89134 /* calc.c in Sources */,
 				6D5429BB23708A0A0059C604 /* CalcController.m in Sources */,
+				C0ED77E423DB558200F7EE7A /* GolfLevel2.m in Sources */,
 				6D7036C92377B995004A956C /* PythController.m in Sources */,
 				6D5429B523708A0A0059C604 /* AppDelegate.m in Sources */,
 				C0D83B0323CF745800A4C866 /* GolfController.m in Sources */,

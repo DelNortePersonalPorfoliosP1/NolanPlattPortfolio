@@ -29,6 +29,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqu-RS-isd">
+                                <rect key="frame" x="281" y="688" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next Level"/>
+                                <connections>
+                                    <segue destination="2r4-nv-WJw" kind="show" id="Bsd-3O-z5p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="8oO-Qd-gKr"/>
@@ -42,6 +50,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kVY-o5-dbc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="89.855072463768124" y="152.67857142857142"/>
+        </scene>
+        <!--GolfLevel2-->
+        <scene sceneID="Map-QO-euz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GolfLevel2" id="2r4-nv-WJw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2uK-Ol-nfQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUR-Fh-gGm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="602" y="-107"/>
         </scene>
     </scenes>
     <resources>

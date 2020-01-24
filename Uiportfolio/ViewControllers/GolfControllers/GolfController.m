@@ -11,7 +11,6 @@
 
 @implementation GolfController
 
-
 @synthesize Ball;
 @synthesize Hole;
 @synthesize Wall;

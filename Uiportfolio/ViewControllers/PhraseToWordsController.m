@@ -15,14 +15,17 @@
 
 
 @synthesize inputField;
-@synthesize outputField;
+@synthesize reverseOutput;
+@synthesize shortHandOutput;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
 -(IBAction)reversePhrase:(id)sender {
     
-   outputField.text = [NSString stringWithFormat:@"%s" , reversePhrase(inputField.text.UTF8String)];
+   reverseOutput.text = [NSString stringWithFormat:@"%s" , reversePhrase(inputField.text.UTF8String)];
+    
+    shortHandOutput.text = [NSString stringWithFormat:@"%s" , shortHandPhrase(inputField.text.UTF8String)];
 }  
 
 @end
