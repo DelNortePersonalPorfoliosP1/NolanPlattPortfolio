@@ -14,11 +14,13 @@
 @synthesize Ball;
 @synthesize Hole;
 @synthesize Wall;
+@synthesize NextLevelButton;
 
 - (void)viewDidLoad {
 [super viewDidLoad];
     self.Hole.layer.cornerRadius = .5*self.Hole.layer.frame.size.height;
     self.Hole.layer.masksToBounds = YES;
+    NextLevelButton.hidden = YES;
 }
 
 
@@ -30,6 +32,8 @@
    
  
   if (CGRectIntersectsRect(self.Ball.frame, self.Hole.frame)) {
+      NextLevelButton.hidden = NO;
+
     [self.gameTimer invalidate];
     [self.view setUserInteractionEnabled:YES];
     self.Ball.center = CGPointMake(self.Hole.center.x, self.Hole.center.y);
@@ -38,6 +42,7 @@
    
 
   if(fabs(self.ballVelocityX) < stopSpeed && fabs(self.ballVelocityY) < stopSpeed) {
+
     [self.gameTimer invalidate];
     [self.view setUserInteractionEnabled:YES];
   }

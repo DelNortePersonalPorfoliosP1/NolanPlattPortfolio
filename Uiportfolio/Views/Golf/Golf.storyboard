@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="golfball.png" translatesAutoresizingMaskIntoConstraints="NO" id="iNv-n2-kIy">
-                                <rect key="frame" x="155" y="739" width="127" height="110"/>
+                                <rect key="frame" x="165" y="782" width="44" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="poZ-dv-cbO">
@@ -30,9 +30,9 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqu-RS-isd">
-                                <rect key="frame" x="281" y="688" width="72" height="30"/>
+                                <rect key="frame" x="120" y="221" width="160" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next Level"/>
+                                <state key="normal" title="Good Job! Next Level"/>
                                 <connections>
                                     <segue destination="2r4-nv-WJw" kind="show" id="Bsd-3O-z5p"/>
                                 </connections>
@@ -44,6 +44,7 @@
                     <connections>
                         <outlet property="Ball" destination="iNv-n2-kIy" id="Wp9-yn-yOQ"/>
                         <outlet property="Hole" destination="GoV-BQ-sdZ" id="BQ9-n6-Jux"/>
+                        <outlet property="NextLevelButton" destination="oqu-RS-isd" id="70A-tX-OYN"/>
                         <outlet property="Wall" destination="poZ-dv-cbO" id="NE9-KX-x7m"/>
                     </connections>
                 </viewController>
