@@ -36,6 +36,7 @@
 		C007135A23A1508700CB2E90 /* PhraseToWordsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C007135923A1508700CB2E90 /* PhraseToWordsController.m */; };
 		C00B21AF23D7674300D1B723 /* golfball.png in Resources */ = {isa = PBXBuildFile; fileRef = C00B21AE23D7674300D1B723 /* golfball.png */; };
 		C00B21B123D76B0500D1B723 /* Black-square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C00B21B023D76B0500D1B723 /* Black-square.jpg */; };
+		C01917CD23E0A5BF001B9911 /* GolfLevel3.m in Sources */ = {isa = PBXBuildFile; fileRef = C01917CC23E0A5BF001B9911 /* GolfLevel3.m */; };
 		C019B59023DB533200854AF6 /* GolfLevel2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C019B58F23DB533200854AF6 /* GolfLevel2.storyboard */; };
 		C069B05B23DF463500EE8C3F /* GolfLevel3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C069B05A23DF463500EE8C3F /* GolfLevel3.storyboard */; };
 		C0A422D523A14EBE003B8024 /* PhraseToWords.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A422D423A14EBE003B8024 /* PhraseToWords.storyboard */; };
@@ -87,6 +88,8 @@
 		C007135B23A1509900CB2E90 /* PhraseToWordsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhraseToWordsController.h; sourceTree = "<group>"; };
 		C00B21AE23D7674300D1B723 /* golfball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golfball.png; sourceTree = "<group>"; };
 		C00B21B023D76B0500D1B723 /* Black-square.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Black-square.jpg"; sourceTree = "<group>"; };
+		C01917CC23E0A5BF001B9911 /* GolfLevel3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GolfLevel3.m; sourceTree = "<group>"; };
+		C01917CE23E0A5DB001B9911 /* GolfLevel3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GolfLevel3.h; sourceTree = "<group>"; };
 		C019B58F23DB533200854AF6 /* GolfLevel2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GolfLevel2.storyboard; sourceTree = "<group>"; };
 		C064E18423996644003A5991 /* ReverseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseController.h; sourceTree = "<group>"; };
 		C069B05A23DF463500EE8C3F /* GolfLevel3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GolfLevel3.storyboard; sourceTree = "<group>"; };
@@ -227,6 +230,8 @@
 				C0D83B0423CF746500A4C866 /* GolfController.h */,
 				C0ED77E323DB558200F7EE7A /* GolfLevel2.m */,
 				C0ED77E523DB558F00F7EE7A /* GolfLevel2.h */,
+				C01917CC23E0A5BF001B9911 /* GolfLevel3.m */,
+				C01917CE23E0A5DB001B9911 /* GolfLevel3.h */,
 			);
 			path = GolfControllers;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 				C0D83B0323CF745800A4C866 /* GolfController.m in Sources */,
 				6D7036E12379DA95004A956C /* histogram.c in Sources */,
 				C007135A23A1508700CB2E90 /* PhraseToWordsController.m in Sources */,
+				C01917CD23E0A5BF001B9911 /* GolfLevel3.m in Sources */,
 				6D2C88E623824E78008A5F5E /* HistoController.m in Sources */,
 				6D5429C623708A0C0059C604 /* main.m in Sources */,
 				6D5429B823708A0A0059C604 /* SceneDelegate.m in Sources */,

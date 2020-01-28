@@ -1,27 +1,25 @@
 //
-//  GolfLevel2.m
+//  GolfLevel3.m
 //  Uiportfolio
 //
-//  Created by Platt, Nolan on 1/24/20.
+//  Created by Platt, Nolan on 1/28/20.
 //  Copyright © 2020 JM. All rights reserved.
 //
 
 #include "control.h"
-#import "GolfLevel2.h"
+#import "GolfLevel3.h"
 
-@implementation GolfLevel2
+@implementation GolfLevel3
 
 @synthesize Ball;
 @synthesize Hole;
 @synthesize Wall1;
 @synthesize Wall2;
-@synthesize NextLevelButton;
 
 - (void)viewDidLoad {
 [super viewDidLoad];
     self.Hole.layer.cornerRadius = .5*self.Hole.layer.frame.size.height;
     self.Hole.layer.masksToBounds = YES;
-    NextLevelButton.hidden = YES;
 }
 
 
@@ -33,13 +31,10 @@
    
  
   if (CGRectIntersectsRect(self.Ball.frame, self.Hole.frame)) {
-      NextLevelButton.hidden = NO;
-
     [self.gameTimer invalidate];
     [self.view setUserInteractionEnabled:YES];
     self.Ball.center = CGPointMake(self.Hole.center.x, self.Hole.center.y);
     self.Ball.alpha = 0.2;
-
   }
    
 

@@ -33,6 +33,14 @@
                                 <rect key="frame" x="176" y="730" width="62" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnQ-m4-Fje">
+                                <rect key="frame" x="126" y="238" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Good Job! Next Level"/>
+                                <connections>
+                                    <segue destination="OMq-fr-pTe" kind="show" id="xS1-1k-KXO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ja3-oY-X6B"/>
@@ -40,6 +48,7 @@
                     <connections>
                         <outlet property="Ball" destination="OsT-Z2-sbj" id="aO1-pO-Swg"/>
                         <outlet property="Hole" destination="nyP-3o-M3T" id="H58-Np-GQp"/>
+                        <outlet property="NextLevelButton" destination="TnQ-m4-Fje" id="N8e-Hb-ord"/>
                         <outlet property="Wall1" destination="6mt-Zv-fGJ" id="o5H-g5-LQJ"/>
                         <outlet property="Wall2" destination="LL4-LZ-4gM" id="jiS-Sd-3gF"/>
                     </connections>
@@ -47,6 +56,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="svk-s3-hWP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="386.95652173913044" y="-128.57142857142856"/>
+        </scene>
+        <!--GolfLevel3-->
+        <scene sceneID="Q1f-SY-gVF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GolfLevel3" id="OMq-fr-pTe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jdL-tr-D2y"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Th8-jl-U9s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="-196"/>
         </scene>
     </scenes>
     <resources>

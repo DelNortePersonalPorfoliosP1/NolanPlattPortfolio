@@ -1,22 +1,21 @@
 //
-//  GolfLevel2.h
+//  GolfLevel3.h
 //  Uiportfolio
 //
-//  Created by Platt, Nolan on 1/24/20.
+//  Created by Platt, Nolan on 1/28/20.
 //  Copyright © 2020 JM. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 
-@interface GolfLevel2 : UIViewController
+@interface GolfLevel3 : UIViewController
 
 
 @property (weak, nonatomic) IBOutlet UIImageView *Hole;
 @property (weak, nonatomic) IBOutlet UIImageView *Ball;
 @property (weak, nonatomic) IBOutlet UIImageView *Wall1;
 @property (weak, nonatomic) IBOutlet UIImageView *Wall2;
-@property (weak, nonatomic) IBOutlet UIButton *NextLevelButton;
 
 @property (nonatomic) CGPoint firstPoint;
 @property (nonatomic) CGPoint lastPoint;
