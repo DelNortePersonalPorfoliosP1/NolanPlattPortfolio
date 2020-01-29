@@ -15,16 +15,26 @@
 @synthesize Hole;
 @synthesize Wall;
 @synthesize NextLevelButton;
+@synthesize youLostLabel;
+@synthesize instructionsLabel;
+@synthesize youWinLabel;
+@synthesize strokeCountLabel;
 
 - (void)viewDidLoad {
 [super viewDidLoad];
     self.Hole.layer.cornerRadius = .5*self.Hole.layer.frame.size.height;
     self.Hole.layer.masksToBounds = YES;
     NextLevelButton.hidden = YES;
+    youWinLabel.hidden = YES;
+    youLostLabel.hidden = YES;
+    
 }
 
 
 -(void)moveBall {
+  
+  
+    
   self.ballVelocityX = speedDamping * self.ballVelocityX;
   self.ballVelocityY = speedDamping * self.ballVelocityY;
    
@@ -32,7 +42,21 @@
    
  
   if (CGRectIntersectsRect(self.Ball.frame, self.Hole.frame)) {
-      NextLevelButton.hidden = NO;
+      if(_strokeCount > 2) {
+          youLostLabel.hidden = NO;
+          instructionsLabel.hidden = YES;
+          Hole.hidden = YES;
+          Ball.hidden = YES;
+          Wall.hidden = YES;
+      }
+      if(2 >= _strokeCount) {
+          NextLevelButton.hidden = NO;
+          instructionsLabel.hidden = YES;
+          youWinLabel.hidden = NO;
+          Hole.hidden = YES;
+          Ball.hidden = YES;
+          Wall.hidden = YES;
+      }
 
     [self.gameTimer invalidate];
     [self.view setUserInteractionEnabled:YES];
@@ -63,6 +87,11 @@
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    self.strokeCount++;
+      
+    self.strokeCountLabel.text = [NSString stringWithFormat:@"Strokes: %d" , _strokeCount];
+    
   UITouch *touch = [touches anyObject];
     
   [self.view setUserInteractionEnabled:NO];
