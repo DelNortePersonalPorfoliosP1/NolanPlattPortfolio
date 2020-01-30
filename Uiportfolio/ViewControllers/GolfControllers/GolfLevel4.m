@@ -1,21 +1,21 @@
 //
-//  GolfLevel3.m
+//  GolfLevel4.m
 //  Uiportfolio
 //
-//  Created by Platt, Nolan on 1/28/20.
+//  Created by Platt, Nolan on 1/30/20.
 //  Copyright © 2020 JM. All rights reserved.
 //
 
 #include "control.h"
-#import "GolfLevel3.h"
+#import "GolfLevel4.h"
 
-@implementation GolfLevel3
+@implementation GolfLevel4
 
 @synthesize Ball;
 @synthesize Hole;
 @synthesize Wall1;
 @synthesize Wall2;
-@synthesize NextLevelButton;
+@synthesize Wall3;
 @synthesize youLostLabel;
 @synthesize instructionsLabel;
 @synthesize youWinLabel;
@@ -25,7 +25,6 @@
 [super viewDidLoad];
     self.Hole.layer.cornerRadius = .5*self.Hole.layer.frame.size.height;
     self.Hole.layer.masksToBounds = YES;
-    NextLevelButton.hidden = YES;
     youWinLabel.hidden = YES;
     youLostLabel.hidden = YES;
 }
@@ -39,22 +38,23 @@
    
  
   if (CGRectIntersectsRect(self.Ball.frame, self.Hole.frame)) {
-      if(_strokeCount > 3) {
+      if(_strokeCount > 4) {
                youLostLabel.hidden = NO;
                instructionsLabel.hidden = YES;
                Hole.hidden = YES;
                Ball.hidden = YES;
                Wall1.hidden = YES;
-          Wall2.hidden = YES;
+               Wall2.hidden = YES;
+          Wall3.hidden = YES;
            }
-           if(3 >= _strokeCount) {
-               NextLevelButton.hidden = NO;
+           if(4 >= _strokeCount) {
                instructionsLabel.hidden = YES;
                youWinLabel.hidden = NO;
                Hole.hidden = YES;
                Ball.hidden = YES;
                Wall1.hidden = YES;
                Wall2.hidden = YES;
+               Wall3.hidden = YES;
            }
       
 
@@ -95,6 +95,16 @@
            
           
         }
+    if (CGRectIntersectsRect(self.Ball.frame, self.Wall3.frame)) {
+             //[self.gameTimer invalidate];
+              //[self.view setUserInteractionEnabled:YES];
+              
+              
+              _ballVelocityX = -_ballVelocityX;
+              _ballVelocityY = -_ballVelocityY;
+              
+             
+           }
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
