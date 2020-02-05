@@ -38,12 +38,15 @@
 		C00B21B123D76B0500D1B723 /* Black-square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C00B21B023D76B0500D1B723 /* Black-square.jpg */; };
 		C018DAF823E33A4D00E67B5E /* GolfLevel4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C018DAF723E33A4D00E67B5E /* GolfLevel4.storyboard */; };
 		C018DAFA23E33E0800E67B5E /* GolfLevel4.m in Sources */ = {isa = PBXBuildFile; fileRef = C018DAF923E33E0800E67B5E /* GolfLevel4.m */; };
+		C01913AC23EB2D52006710CF /* backofcard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C01913AB23EB2D52006710CF /* backofcard.jpg */; };
 		C01917CD23E0A5BF001B9911 /* GolfLevel3.m in Sources */ = {isa = PBXBuildFile; fileRef = C01917CC23E0A5BF001B9911 /* GolfLevel3.m */; };
 		C019B59023DB533200854AF6 /* GolfLevel2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C019B58F23DB533200854AF6 /* GolfLevel2.storyboard */; };
 		C069B05B23DF463500EE8C3F /* GolfLevel3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C069B05A23DF463500EE8C3F /* GolfLevel3.storyboard */; };
 		C0A422D523A14EBE003B8024 /* PhraseToWords.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A422D423A14EBE003B8024 /* PhraseToWords.storyboard */; };
 		C0D83AFF23CF72AA00A4C866 /* Golf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0D83AFE23CF72AA00A4C866 /* Golf.storyboard */; };
 		C0D83B0323CF745800A4C866 /* GolfController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D83B0223CF745800A4C866 /* GolfController.m */; };
+		C0EB4A7B23E8858A0084EC4E /* CardGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0EB4A7A23E8858A0084EC4E /* CardGame.storyboard */; };
+		C0EB4A7D23E885BD0084EC4E /* CardGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EB4A7C23E885BD0084EC4E /* CardGameController.m */; };
 		C0ED40C023A9488C005B950C /* piglatin.c in Sources */ = {isa = PBXBuildFile; fileRef = C0ED40BF23A9488C005B950C /* piglatin.c */; };
 		C0ED77E423DB558200F7EE7A /* GolfLevel2.m in Sources */ = {isa = PBXBuildFile; fileRef = C0ED77E323DB558200F7EE7A /* GolfLevel2.m */; };
 /* End PBXBuildFile section */
@@ -93,6 +96,7 @@
 		C018DAF723E33A4D00E67B5E /* GolfLevel4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GolfLevel4.storyboard; sourceTree = "<group>"; };
 		C018DAF923E33E0800E67B5E /* GolfLevel4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GolfLevel4.m; sourceTree = "<group>"; };
 		C018DAFB23E33F4000E67B5E /* GolfLevel4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GolfLevel4.h; sourceTree = "<group>"; };
+		C01913AB23EB2D52006710CF /* backofcard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backofcard.jpg; sourceTree = "<group>"; };
 		C01917CC23E0A5BF001B9911 /* GolfLevel3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GolfLevel3.m; sourceTree = "<group>"; };
 		C01917CE23E0A5DB001B9911 /* GolfLevel3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GolfLevel3.h; sourceTree = "<group>"; };
 		C019B58F23DB533200854AF6 /* GolfLevel2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GolfLevel2.storyboard; sourceTree = "<group>"; };
@@ -102,6 +106,9 @@
 		C0D83AFE23CF72AA00A4C866 /* Golf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Golf.storyboard; sourceTree = "<group>"; };
 		C0D83B0223CF745800A4C866 /* GolfController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GolfController.m; sourceTree = "<group>"; };
 		C0D83B0423CF746500A4C866 /* GolfController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GolfController.h; sourceTree = "<group>"; };
+		C0EB4A7A23E8858A0084EC4E /* CardGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardGame.storyboard; sourceTree = "<group>"; };
+		C0EB4A7C23E885BD0084EC4E /* CardGameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardGameController.m; sourceTree = "<group>"; };
+		C0EB4A7E23E885E30084EC4E /* CardGameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardGameController.h; sourceTree = "<group>"; };
 		C0ED40BF23A9488C005B950C /* piglatin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = piglatin.c; sourceTree = "<group>"; };
 		C0ED77E323DB558200F7EE7A /* GolfLevel2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GolfLevel2.m; sourceTree = "<group>"; };
 		C0ED77E523DB558F00F7EE7A /* GolfLevel2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GolfLevel2.h; sourceTree = "<group>"; };
@@ -137,6 +144,7 @@
 		6D5429B223708A0A0059C604 /* Uiportfolio */ = {
 			isa = PBXGroup;
 			children = (
+				C01913AB23EB2D52006710CF /* backofcard.jpg */,
 				C00B21B023D76B0500D1B723 /* Black-square.jpg */,
 				C00B21AE23D7674300D1B723 /* golfball.png */,
 				6D5429C423708A0C0059C604 /* Info.plist */,
@@ -164,6 +172,7 @@
 				6DB666142372033B00A89134 /* Pythagoras.storyboard */,
 				9D8B26112396CF04007A1849 /* Reverse.storyboard */,
 				C0A422D423A14EBE003B8024 /* PhraseToWords.storyboard */,
+				C0EB4A7A23E8858A0084EC4E /* CardGame.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +197,8 @@
 				6D7036C82377B995004A956C /* PythController.m */,
 				C007135923A1508700CB2E90 /* PhraseToWordsController.m */,
 				C007135B23A1509900CB2E90 /* PhraseToWordsController.h */,
+				C0EB4A7C23E885BD0084EC4E /* CardGameController.m */,
+				C0EB4A7E23E885E30084EC4E /* CardGameController.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -304,6 +315,7 @@
 				6DB666092371ED4400A89134 /* FileIO.storyboard in Resources */,
 				6D5429C323708A0C0059C604 /* LaunchScreen.storyboard in Resources */,
 				6DB666112372014200A89134 /* Jumpers.storyboard in Resources */,
+				C01913AC23EB2D52006710CF /* backofcard.jpg in Resources */,
 				C0A422D523A14EBE003B8024 /* PhraseToWords.storyboard in Resources */,
 				6D2C88E823824EE6008A5F5E /* HistoLab.storyboard in Resources */,
 				6D5429C023708A0C0059C604 /* Assets.xcassets in Resources */,
@@ -313,6 +325,7 @@
 				C019B59023DB533200854AF6 /* GolfLevel2.storyboard in Resources */,
 				C00B21AF23D7674300D1B723 /* golfball.png in Resources */,
 				6D5429BE23708A0A0059C604 /* Main.storyboard in Resources */,
+				C0EB4A7B23E8858A0084EC4E /* CardGame.storyboard in Resources */,
 				C018DAF823E33A4D00E67B5E /* GolfLevel4.storyboard in Resources */,
 				C0D83AFF23CF72AA00A4C866 /* Golf.storyboard in Resources */,
 				C00B21B123D76B0500D1B723 /* Black-square.jpg in Resources */,
@@ -329,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0ED40C023A9488C005B950C /* piglatin.c in Sources */,
+				C0EB4A7D23E885BD0084EC4E /* CardGameController.m in Sources */,
 				6D7036DF2379DA59004A956C /* jumpers.c in Sources */,
 				6D7036D123788FAB004A956C /* FileIOController.m in Sources */,
 				6DB6661F23724E2100A89134 /* calc.c in Sources */,
