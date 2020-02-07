@@ -6,8 +6,14 @@
 //  Copyright © 2020 NP. All rights reserved.
 //
 
-#ifndef CardGameController_h
-#define CardGameController_h
+#import <UIKit/UIKit.h>
+
+@interface CardGameController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UIImageView *cardDeck;
+
+@property (weak, nonatomic) IBOutlet UIImageView *playerCards;
 
 
-#endif /* CardGameController_h */
+
+@end

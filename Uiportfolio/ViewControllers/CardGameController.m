@@ -6,4 +6,22 @@
 //  Copyright © 2020 NP. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "CardGameController.h"
+
+#include <string.h>
+#include "control.h"
+
+@implementation CardGameController
+
+@synthesize cardDeck;
+@synthesize playerCards;
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+
+@end
+
+                                     
