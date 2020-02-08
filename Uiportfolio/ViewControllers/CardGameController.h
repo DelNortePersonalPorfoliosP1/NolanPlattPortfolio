@@ -11,9 +11,7 @@
 @interface CardGameController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *cardDeck;
-
 @property (weak, nonatomic) IBOutlet UIImageView *playerCards;
-
 
 
 @end
