@@ -15,12 +15,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backofcard.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HiL-qi-6DA">
-                                <rect key="frame" x="57" y="627" width="280" height="148"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backofcard.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZDS-uj-W9V">
+                                <rect key="frame" x="123" y="124" width="128" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backofcard.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZDS-uj-W9V">
-                                <rect key="frame" x="81" y="123" width="213" height="136"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mee-fO-IHC">
+                                <rect key="frame" x="152" y="281" width="70" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RuF-AX-hXf">
+                                <rect key="frame" x="152" y="541" width="70" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backofcard.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HiL-qi-6DA">
+                                <rect key="frame" x="110" y="677" width="155" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -28,8 +36,8 @@
                         <viewLayoutGuide key="safeArea" id="yuj-gj-ooC"/>
                     </view>
                     <connections>
-                        <outlet property="cardDeck" destination="ZDS-uj-W9V" id="Hgh-QX-Jo4"/>
-                        <outlet property="playerCards" destination="HiL-qi-6DA" id="5as-Vw-her"/>
+                        <outlet property="card1" destination="RuF-AX-hXf" id="qyr-H4-LMR"/>
+                        <outlet property="card2" destination="Mee-fO-IHC" id="ND3-jv-z4u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D9n-e5-yDC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
