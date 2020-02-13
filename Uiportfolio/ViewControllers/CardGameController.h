@@ -20,6 +20,8 @@
 @property (strong, nonatomic) IBOutlet UIImageView *foundation;
 @property (strong, nonatomic) IBOutlet UIImageView *waste;
 
+@property (weak, nonatomic) IBOutlet UIImageView *cardDeck;
+@property (weak, nonatomic) IBOutlet UIImageView *playerCards;
 
 @property (strong, nonatomic) NSTimer *gameTimer;
 

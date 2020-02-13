@@ -14,6 +14,7 @@
 @implementation CardGameController
 
 
+@synthesize cardDeck, playerCards;
 
 
 - (void)viewDidLoad {
