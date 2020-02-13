@@ -68,4 +68,34 @@ char *shortHandString(char *word);
 
 
 
+// Card Game
+
+#define SUIT_CNT 4
+#define SYMBOL_CNT 13
+#define DECK_CNT 52
+#define PYRMD_CNT 28
+#define PYRMD_ROWS 7
+
+static char *colorStrings[] = {"red", "black"};
+static char *suitStrings[] = {"clubs", "diamonds", "hearts", "spades"};
+static char *symbolStrings[] = {"ace", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "jack", "queen", "king"};
+typedef enum {Red, Black} COLOR_TYPE;
+typedef enum {Clubs, Diamonds, Hearts, Spades} SUIT_TYPE;
+typedef enum {Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King} SYMBOL_TYPE;
+typedef struct card {
+    int cID;
+    int value;
+    int row;
+    COLOR_TYPE color;
+    SUIT_TYPE suit;
+    SYMBOL_TYPE symbol;
+    char cImage[20];
+} CARD;
+CARD * createdeck(void);
+void shuffledeck(CARD *c);
+void dealdeck(CARD *c);
+void freedeck(CARD *c);
+CARD * createPyramid(void);
+void dealDeckToPyramid(CARD *, CARD *);
+
 #endif /* portfolio_h */

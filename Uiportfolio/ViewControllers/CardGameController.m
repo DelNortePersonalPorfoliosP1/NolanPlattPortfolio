@@ -13,8 +13,7 @@
 
 @implementation CardGameController
 
-@synthesize card1;
-@synthesize card2;
+
 
 
 - (void)viewDidLoad {
@@ -22,15 +21,12 @@
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    
     printf("Touches began");
    
 }
 
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-   [card1 setImage:[UIImage imageNamed:@"hA"]];
-    [card2 setImage:[UIImage imageNamed:@"hA"]];
 
 
 }
