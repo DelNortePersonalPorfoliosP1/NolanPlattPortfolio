@@ -29,6 +29,8 @@
 @property (nonatomic) CGPoint firstPoint;
 @property (nonatomic) CGPoint lastPoint;
 
+@property (weak, nonatomic) IBOutlet UIButton *shuffleButton;
+
 // UIImageView Variables
 @property (strong, nonatomic) IBOutlet UIImageView *c11;
 @property (strong, nonatomic) IBOutlet UIImageView *c21;

@@ -127,6 +127,14 @@
                                 <rect key="frame" x="276" y="470" width="70" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtx-7O-Lg3">
+                                <rect key="frame" x="302" y="116" width="76" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Shuffle"/>
+                                <connections>
+                                    <action selector="shuffleButtonClicked:" destination="Uy2-Ge-vTf" eventType="touchUpInside" id="2WI-Hx-aaT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="yuj-gj-ooC"/>
@@ -160,6 +168,7 @@
                         <outlet property="c75" destination="kIl-vJ-Tm8" id="1sr-jd-xEf"/>
                         <outlet property="c76" destination="T6J-DP-YXy" id="UNg-j0-yAL"/>
                         <outlet property="c77" destination="tsZ-Vp-nBO" id="UPA-dS-hRO"/>
+                        <outlet property="shuffleButton" destination="qtx-7O-Lg3" id="NdD-W6-n78"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D9n-e5-yDC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

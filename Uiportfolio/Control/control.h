@@ -92,10 +92,10 @@ typedef struct card {
     char cImage[20];
 } CARD;
 CARD * createdeck(void);
-void shuffledeck(CARD *c);
+void shuffleDeck(CARD *c);
 void dealdeck(CARD *c);
 void freedeck(CARD *c);
-CARD * createPyramid(void);
-void dealDeckToPyramid(CARD *, CARD *);
+CARD * createPyramidPattern(void);
+void setDeckToPyramid(CARD *, CARD *);
 
 #endif /* portfolio_h */
