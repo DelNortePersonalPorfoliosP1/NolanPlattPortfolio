@@ -46,7 +46,7 @@ CARD * createdeck()
     return card;
 }
 
-void shuffleDeck(CARD *card)
+void shuffledeck(CARD *card)
 {
 
     CARD swap[1];
@@ -58,6 +58,22 @@ void shuffleDeck(CARD *card)
         card[i] = card[r];
         card[r] = swap[0];
     }
+}
+
+CARD * createStock()
+{
+    
+    CARD *cards;
+    cards = (CARD *)malloc(sizeof(CARD) *STK_CNT);         
+    
+    return cards;
+    
+}
+
+void freedeck(CARD *card)
+{
+    if (card != NULL)
+        free(card);
 }
  
 

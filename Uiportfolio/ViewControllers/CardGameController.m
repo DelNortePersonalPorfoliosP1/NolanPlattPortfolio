@@ -22,12 +22,14 @@
     
     
     cards = createdeck(); // create new deck
-    shuffleDeck(cards); // shuffle & randomize cards
+    shuffledeck(cards); // shuffle & randomize cards
        
        pyramid = createPyramidPattern(); // create pyramid pattern using previous deck
+    stock = createStock();
+
        setDeckToPyramid(pyramid, cards);
-       
-    
+
+
     
     for (int i = 0; i < PYRMD_CNT; i++){
            NSString *pId = [NSString stringWithFormat:@"%s.png" , pyramid[i].cImage] ;
@@ -117,7 +119,8 @@
                case 27:
                    [self.c77 setImage:[UIImage imageNamed:pId]];
                    break;
-                   
+              
+
            }
      
        }
@@ -129,15 +132,29 @@
    
 }
 
+-(void)buildStock {
+    
+    freedeck(cards);
+    cards = createdeck();
+    shuffledeck (cards);
+    
+    stock = createStock();
+    
+    printf("First stock: %c", stock[0]);
+    
+    
+    
+}
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 
 
 }
 
+
 - (IBAction)shuffleButtonClicked:(id)sender {
     cards = createdeck(); // create new deck
-       shuffleDeck(cards); // shuffle & randomize cards
+       shuffledeck(cards); // shuffle & randomize cards
           
           pyramid = createPyramidPattern(); // create pyramid pattern using previous deck
           setDeckToPyramid(pyramid, cards);
@@ -232,7 +249,7 @@
                   case 27:
                       [self.c77 setImage:[UIImage imageNamed:pId]];
                       break;
-                      
+                
               }
         
           }

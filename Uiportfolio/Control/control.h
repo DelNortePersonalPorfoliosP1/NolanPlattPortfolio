@@ -74,6 +74,7 @@ char *shortHandString(char *word);
 #define SYMBOL_CNT 13
 #define DECK_CNT 52
 #define PYRMD_CNT 28
+#define STK_CNT 24
 #define PYRMD_ROWS 7
 
 static char *colorStrings[] = {"red", "black"};
@@ -92,10 +93,12 @@ typedef struct card {
     char cImage[20];
 } CARD;
 CARD * createdeck(void);
-void shuffleDeck(CARD *c);
+void shuffledeck(CARD *c);
 void dealdeck(CARD *c);
 void freedeck(CARD *c);
 CARD * createPyramidPattern(void);
 void setDeckToPyramid(CARD *, CARD *);
+CARD * createStock(void);
+
 
 #endif /* portfolio_h */

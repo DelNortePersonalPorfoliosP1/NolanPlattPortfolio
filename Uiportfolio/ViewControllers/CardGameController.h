@@ -15,10 +15,10 @@
 {
     CARD *cards;
     CARD *pyramid;
+    CARD *stock;
+
 }
 
-@property (strong, nonatomic) IBOutlet UIImageView *foundation;
-@property (strong, nonatomic) IBOutlet UIImageView *waste;
 
 @property (weak, nonatomic) IBOutlet UIImageView *cardDeck;
 @property (weak, nonatomic) IBOutlet UIImageView *playerCards;
@@ -60,6 +60,12 @@
 @property (strong, nonatomic) IBOutlet UIImageView *c75;
 @property (strong, nonatomic) IBOutlet UIImageView *c76;
 @property (strong, nonatomic) IBOutlet UIImageView *c77;
+
+@property (weak, nonatomic) IBOutlet UIImageView *stock;
+
+@property (weak, nonatomic) IBOutlet UIImageView *waste;
+
+@property (weak, nonatomic) IBOutlet UIImageView *foundation;
 
 @end
 
