@@ -21,19 +21,19 @@ CARD * createdeck()
 {
     CARD *card;
 
-    card = (CARD *)malloc(sizeof(CARD) * DECK_CNT);         // Intro to memory allocatin
+    card = (CARD *)malloc(sizeof(CARD) * DECK_CNT);         // memory allocatin
     
-    for(int suit = Clubs; suit <= Spades; suit++) {
+    for(int suit = Clubs; suit <= Spades; suit++) { // Clubs, Diamonds, Hearts, Spades
         
         for(int symbol = Ace; symbol <= King; symbol++ ) {
-            int index = (suit * SYMBOL_CNT) + symbol;
-            card[index].cID = index + 1;
-            card[index].value = symbol + 1;
-            card[index].suit = suit;
-            card[index].symbol = symbol;
+            int index = (suit * SYMBOL_CNT) + symbol; // index equals: 0...12, 13...25, 26...38, 39...51
+            card[index].cID = index + 1; // set index.CID to + 1 of the current index
+            card[index].value = symbol + 1; // set index.value to +1 of the current symbol
+            card[index].suit = suit; // set index.suit equal to suit
+            card[index].symbol = symbol; // set index.symbol equal to the current symbol
             
             
-            if(suit == Diamonds) {
+            if(suit == Diamonds) { // if statement to check if Diamonds is red or black
                 card[index].color = Red;
             } else {
                 card[index].color = Black;
@@ -46,44 +46,47 @@ CARD * createdeck()
     return card;
 }
 
-void shuffledeck(CARD *card)
+void shuffledeck(CARD *card) //shuffle deck function
 {
 
     CARD swap[1];
-    for (int i = 0; i < DECK_CNT; i++) {
-        int r;
-        while ( (r = rand() % DECK_CNT) == i);
+    for (int i = 0; i < DECK_CNT; i++) { // for loop through total of deck
+        int r; // new integer for the random
+        while ( (r = rand() % DECK_CNT) == i); // while the random is divisable by the deck total and equals the index
         
-        swap[0] = card[i];
-        card[i] = card[r];
-        card[r] = swap[0];
+        swap[0] = card[i]; // set temp swap variable to the current index of the card
+        card[i] = card[r]; // set the current card index to the random card index
+        card[r] = swap[0]; // set the random card index to the temporary variable we created before
     }
 }
 
-CARD * createStock()
+CARD * createStock() // creates stock
 {
     
-    CARD *cards;
-    cards = (CARD *)malloc(sizeof(CARD) *STK_CNT);         
+    CARD *cards; //creates new card variable
+    cards = (CARD *)malloc(sizeof(CARD) *STK_CNT);   // set cards equal the current stack count of the cards
     
     return cards;
     
 }
 
-void freedeck(CARD *card)
+void freedeck(CARD *card) // free deck takes in a single card
 {
-    if (card != NULL)
-        free(card);
+    if (card != NULL) // if the card isn't null
+        free(card); // free the card
 }
  
 
 
 
-CARD * createPyramidPattern()
+CARD * createPyramidPattern() // creates the pattern needed for the pyramid
 {
-    CARD *cards;
+    CARD *cards; // create new cards variable
 
-    cards = (CARD *)malloc(sizeof(CARD) * PYRMD_CNT);
+    cards = (CARD *)malloc(sizeof(CARD) * PYRMD_CNT); // set cards equal to the malloc of the size of the card
+    
+    //following code sets each cards index to their row
+    
     cards[0].row = 0;
     
     cards[1].row = 1;
@@ -119,18 +122,18 @@ CARD * createPyramidPattern()
     cards[26].row = 6;
     cards[27].row = 6;
     
-    return cards;
+    return cards; //return the array of cards
     
 }
 
-void setDeckToPyramid(CARD * pyramid, CARD * cards)
+void setDeckToPyramid(CARD * pyramid, CARD * cards) // sets the pyramid equal to the deck, takes in the pyramid array aswell as the cards array
 {
-    for (int i = 0; i < PYRMD_CNT; i++)
+    for (int i = 0; i < PYRMD_CNT; i++) // for loop through the entire pyramid array
     {
         // Card -> Pyramid variable by going through same index in array(swap)
         
-        cards[i].row = pyramid[i].row;
-        pyramid[i] = cards[i];
+        cards[i].row = pyramid[i].row; // sets card row equal to pyramid row
+        pyramid[i] = cards[i]; // set pyramid index equal to card index
     }
 }
 

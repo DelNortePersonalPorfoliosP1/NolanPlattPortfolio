@@ -14,13 +14,13 @@
 @implementation CardGameController
 
 
-@synthesize cardDeck, playerCards, shuffleButton;
+@synthesize cardDeck, playerCards, shuffleButton, scoreLabel;
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    score = 28; // set score to original(starting) score
     cards = createdeck(); // create new deck
     shuffledeck(cards); // shuffle & randomize cards
        
@@ -30,11 +30,12 @@
        setDeckToPyramid(pyramid, cards);
 
 
-    
-    for (int i = 0; i < PYRMD_CNT; i++){
-           NSString *pId = [NSString stringWithFormat:@"%s.png" , pyramid[i].cImage] ;
+   for (int i = 0; i < PYRMD_CNT; i++){ // for loop for the amount in the pyramid
+                NSString *pId = [NSString stringWithFormat:@"%s.png" , pyramid[i].cImage] ; // create new string to match each individual photo of the card
 
-           switch(i){
+                switch(i){ // switch statement of the for loop index
+                        
+                        // the following are cases for each index in the integer i to set the image of each card
                case 0:
                    [self.c11 setImage:[UIImage imageNamed:pId]];
                    break;
@@ -127,28 +128,69 @@
      
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event { // when mouse touches start
     printf("Touches began");
+    
+      freedeck(cards);            // calls free deck function
+       cards = createdeck();       // create new deck titled "cards"
+       shuffledeck(cards);         // shuffle the new deck we just created
+
+       
+
+       // Store touch
+       UITouch *touch = [touches anyObject];
+       
+       // turn user interaction off as swipe begins
+       [self.view setUserInteractionEnabled:NO];
+       
+       // store point a touch began
+       self.firstPoint = [touch locationInView:self.view];
    
 }
 
 -(void)buildStock {
     
-    freedeck(cards);
-    cards = createdeck();
+    freedeck(cards); // calls the freedeck function with an arrray of cards
+    cards = createdeck(); // creates a new deck
     shuffledeck (cards);
     
     stock = createStock();
     
-    printf("First stock: %c", stock[0]);
+   // printf("First stock: %c", stock[0]);
     
     
     
 }
 
+-(void)setCurrentStockImage {
+    // Set image of current index in the stock array of the stock UIImage
+    
+    
+    // (not working)
+    
+    for (int i = 0; i < stock; i++){ // for loop for the amount in the stock
+      //  [self.stock setImage:[UIImage imageNamed:stock[i]]]
+    }
+
+
+    
+}
+
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+// when mouse stops touching something
 
-
+    UITouch *touch = [touches anyObject];
+    
+    // Store  new point as a touches ended in lastPoint
+    self.lastPoint = [touch locationInView:self.view];
+    
+    // Calc swipeVector between touch began and touch end
+    CGPoint swipeVector = CGPointMake(self.lastPoint.x - self.firstPoint.x, self.lastPoint.y - self.firstPoint.y);
+    
+    NSLog(@"%f,%f", swipeVector.x, swipeVector.y); // log x and y of the swipeVector
+    
+    [self.view setUserInteractionEnabled:YES];
+    
 }
 
 
@@ -157,14 +199,16 @@
        shuffledeck(cards); // shuffle & randomize cards
           
           pyramid = createPyramidPattern(); // create pyramid pattern using previous deck
-          setDeckToPyramid(pyramid, cards);
+          setDeckToPyramid(pyramid, cards); // set the new deck to the pyramid
           
        
        
-       for (int i = 0; i < PYRMD_CNT; i++){
-              NSString *pId = [NSString stringWithFormat:@"%s.png" , pyramid[i].cImage] ;
+       for (int i = 0; i < PYRMD_CNT; i++){ // for loop for the amount in the pyramid
+              NSString *pId = [NSString stringWithFormat:@"%s.png" , pyramid[i].cImage] ; // create new string to match each individual photo of the card
 
-              switch(i){
+              switch(i){ // switch statement of the for loop index
+                      
+                      // the following are cases for each index in the integer i to set the image of each card
                   case 0:
                       [self.c11 setImage:[UIImage imageNamed:pId]];
                       break;

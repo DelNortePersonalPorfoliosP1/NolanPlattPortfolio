@@ -16,8 +16,10 @@
     CARD *cards;
     CARD *pyramid;
     CARD *stock;
+    int score;
 
 }
+
 
 
 @property (weak, nonatomic) IBOutlet UIImageView *cardDeck;
@@ -66,6 +68,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *waste;
 
 @property (weak, nonatomic) IBOutlet UIImageView *foundation;
+
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @end
 

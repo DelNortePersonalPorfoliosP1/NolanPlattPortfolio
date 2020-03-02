@@ -151,6 +151,13 @@
                                 <rect key="frame" x="344" y="792" width="62" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUi-c4-fsS">
+                                <rect key="frame" x="50" y="108" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="yuj-gj-ooC"/>
@@ -185,6 +192,7 @@
                         <outlet property="c76" destination="T6J-DP-YXy" id="UNg-j0-yAL"/>
                         <outlet property="c77" destination="tsZ-Vp-nBO" id="UPA-dS-hRO"/>
                         <outlet property="foundation" destination="JNV-PR-NMo" id="1cR-BV-GX8"/>
+                        <outlet property="scoreLabel" destination="EUi-c4-fsS" id="TLa-qV-aEq"/>
                         <outlet property="shuffleButton" destination="qtx-7O-Lg3" id="NdD-W6-n78"/>
                         <outlet property="stock" destination="8Ta-4r-HKz" id="eUt-UE-a2a"/>
                         <outlet property="waste" destination="k3A-hH-yWD" id="wbq-b7-076"/>
