@@ -155,8 +155,19 @@
     // Row 1
     if(hasRow1BeenDone == 0) {
         if(1 + 8 != 13) {
-            [self.c11 setImage:[UIImage imageNamed:@"defaultphoto.jpg"]];
+            for (int i = 1; i < 1; i++){ // for loop for the amount in the row
+                
+                
+               // UIImageView *tempImageView = @"c1%s", *i;
+
+               // [self.tempImageView setImage:[UIImage imageNamed:@"defaultphoto.jpg"]];
+
+             
+                
+            }
+    
             hasRow1BeenDone = 1;
+        
         }
         else {
             hasRow1BeenDone = 1;
