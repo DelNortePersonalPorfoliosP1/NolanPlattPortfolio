@@ -20,6 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+   
+    
+    
+    
     score = 28; // set score to original(starting) score
     cards = createdeck(); // create new deck
     shuffledeck(cards); // shuffle & randomize cards
@@ -129,23 +133,16 @@
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event { // when mouse touches start
-    printf("Touches began");
     
-      freedeck(cards);            // calls free deck function
-       cards = createdeck();       // create new deck titled "cards"
-       shuffledeck(cards);         // shuffle the new deck we just created
-
-       
-
-       // Store touch
-       UITouch *touch = [touches anyObject];
-       
-       // turn user interaction off as swipe begins
-       [self.view setUserInteractionEnabled:NO];
-       
-       // store point a touch began
-       self.firstPoint = [touch locationInView:self.view];
+    // Check if card at lowest point of pyramid matches with the card at the top of stack to create a number of 13, if it doesn't then the next card in the stock is revealed.
+    
+    
+    
+    
+    
    
+     
+     
 }
 
 -(void)buildStock {

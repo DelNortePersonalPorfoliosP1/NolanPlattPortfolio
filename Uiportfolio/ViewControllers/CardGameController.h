@@ -9,7 +9,6 @@
 
 #import <UIKit/UIKit.h>
 #include "control.h"
-
 @interface CardGameController : UIViewController
 
 {
@@ -32,6 +31,11 @@
 @property (nonatomic) CGPoint lastPoint;
 
 @property (weak, nonatomic) IBOutlet UIButton *shuffleButton;
+
+
+@property (nonatomic) IBOutletCollection(UIImageView) NSArray *cardCollection;
+
+
 
 // UIImageView Variables
 @property (strong, nonatomic) IBOutlet UIImageView *c11;
