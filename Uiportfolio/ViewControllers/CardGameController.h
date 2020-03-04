@@ -16,7 +16,13 @@
     CARD *pyramid;
     CARD *stock;
     int score;
-
+    int hasRow1BeenDone;
+    int hasRow2BeenDone;
+    int hasRow3BeenDone;
+    int hasRow4BeenDone;
+    int hasRow5BeenDone;
+    int hasRow6BeenDone;
+    int hasRow7BeenDone;
 }
 
 
@@ -34,6 +40,8 @@
 
 
 @property (nonatomic) IBOutletCollection(UIImageView) NSArray *cardCollection;
+
+
 
 
 

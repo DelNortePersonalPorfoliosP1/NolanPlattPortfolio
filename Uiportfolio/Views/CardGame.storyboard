@@ -196,38 +196,6 @@
                         <outlet property="shuffleButton" destination="qtx-7O-Lg3" id="NdD-W6-n78"/>
                         <outlet property="stock" destination="8Ta-4r-HKz" id="eUt-UE-a2a"/>
                         <outlet property="waste" destination="k3A-hH-yWD" id="wbq-b7-076"/>
-                        <outletCollection property="player1HandCollection" destination="tsZ-Vp-nBO" id="7cT-Nr-G31"/>
-                        <outletCollection property="player1HandCollection" destination="T6J-DP-YXy" id="sY9-5q-1om"/>
-                        <outletCollection property="player1HandCollection" destination="kIl-vJ-Tm8" id="h6w-hi-4yH"/>
-                        <outletCollection property="player1HandCollection" destination="d0D-zR-aId" id="cg7-zX-oE7"/>
-                        <outletCollection property="player1HandCollection" destination="hcE-Go-LgD" id="5E5-Ba-4Gg"/>
-                        <outletCollection property="player1HandCollection" destination="MtE-6M-1eW" id="erw-Eq-H8f"/>
-                        <outletCollection property="player1HandCollection" destination="38b-kc-gWO" id="FTq-tx-amj"/>
-                        <outletCollection property="player1HandCollection" destination="lL6-ah-heS" id="A7O-Ar-2Ra"/>
-                        <outletCollection property="player1HandCollection" destination="hda-Xc-S85" id="7TX-Sm-u08"/>
-                        <outletCollection property="player1HandCollection" destination="9Go-ZZ-u7N" id="5im-Ir-UPh"/>
-                        <outletCollection property="player1HandCollection" destination="Jmv-Bn-ZXr" id="Inr-00-OSm"/>
-                        <outletCollection property="player1HandCollection" destination="FVz-rG-rF9" id="uRI-Sw-voj"/>
-                        <outletCollection property="player1HandCollection" destination="BLf-r7-HJ3" id="BBp-Ad-S1J"/>
-                        <outletCollection property="player1HandCollection" destination="lTs-pu-2k2" id="TfI-xh-7PB"/>
-                        <outletCollection property="player1HandCollection" destination="YSW-Mc-Mzo" id="rJ6-R9-De3"/>
-                        <outletCollection property="player1HandCollection" destination="YdR-qQ-9ye" id="vKB-DC-1mr"/>
-                        <outletCollection property="player1HandCollection" destination="gdL-JR-hx1" id="LH2-W3-VWE"/>
-                        <outletCollection property="player1HandCollection" destination="xae-JJ-N6y" id="2Lq-xF-O7o"/>
-                        <outletCollection property="player1HandCollection" destination="q2u-lY-l18" id="8Oi-C2-r5L"/>
-                        <outletCollection property="player1HandCollection" destination="q4M-nE-Oqv" id="VGf-k9-Cy8"/>
-                        <outletCollection property="player1HandCollection" destination="0Fq-6c-eq0" id="kHA-uB-56r"/>
-                        <outletCollection property="player1HandCollection" destination="NDm-wA-wOD" id="KWl-4w-PfZ"/>
-                        <outletCollection property="player1HandCollection" destination="3cc-mF-xjS" id="uYf-gf-Y6h"/>
-                        <outletCollection property="player1HandCollection" destination="T01-RP-tM0" id="uKi-md-PT6"/>
-                        <outletCollection property="player1HandCollection" destination="0Fq-6c-eq0" id="sci-aO-732"/>
-                        <outletCollection property="player1HandCollection" destination="NDm-wA-wOD" id="r2G-mc-wji"/>
-                        <outletCollection property="player1HandCollection" destination="3cc-mF-xjS" id="Va3-zd-cT3"/>
-                        <outletCollection property="player1HandCollection" destination="T01-RP-tM0" id="qZB-3f-UN8"/>
-                        <outletCollection property="player1HandCollection" destination="ZDS-uj-W9V" id="qlF-ec-Sui"/>
-                        <outletCollection property="player1HandCollection" destination="RuF-AX-hXf" id="Y7B-FW-Dfv"/>
-                        <outletCollection property="player1HandCollection" destination="HiL-qi-6DA" id="mAR-vl-t08"/>
-                        <outletCollection property="player1HandCollection" destination="Mee-fO-IHC" id="XQC-Lw-HyB"/>
                         <outletCollection property="cardCollection" destination="JNV-PR-NMo" id="HlC-gs-rw3"/>
                         <outletCollection property="cardCollection" destination="k3A-hH-yWD" id="Pcb-Tp-p4B"/>
                         <outletCollection property="cardCollection" destination="8Ta-4r-HKz" id="Fqr-OB-pul"/>

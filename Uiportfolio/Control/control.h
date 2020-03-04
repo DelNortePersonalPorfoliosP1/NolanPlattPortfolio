@@ -100,5 +100,8 @@ CARD * createPyramidPattern(void);
 void setDeckToPyramid(CARD *, CARD *);
 CARD * createStock(void);
 
+void setCurrentStockImage(void);
+
+
 
 #endif /* portfolio_h */
