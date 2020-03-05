@@ -46,6 +46,9 @@
 
 
 // UIImageView Variables
+@property (strong, nonatomic) IBOutlet UIImageView *imageViewInLoop; // Temp Image View Used For For Loop
+
+
 @property (strong, nonatomic) IBOutlet UIImageView *c11;
 @property (strong, nonatomic) IBOutlet UIImageView *c21;
 @property (strong, nonatomic) IBOutlet UIImageView *c22;
